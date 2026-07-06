@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://cee632d4hfopw"]
+
+[ext_resource type="Script" uid="uid://d3hyygofdg6gx" path="res://hud.gd" id="1_64ctp"]
+[ext_resource type="FontFile" uid="uid://846ga8wsqc86" path="res://fonts/Xolonium-Regular.ttf" id="2_8sq4i"]
+
+[node name="HUD" type="CanvasLayer" unique_id=1249423671]
+script = ExtResource("1_64ctp")
+
+[node name="ScoreLabel" type="Label" parent="." unique_id=845457652]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -239.5
+offset_right = 239.5
+offset_bottom = 78.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("2_8sq4i")
+theme_override_font_sizes/font_size = 64
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MessageTimer" type="Timer" parent="." unique_id=2026810377]
+wait_time = 2.0
+one_shot = true
